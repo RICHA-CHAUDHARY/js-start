@@ -26,7 +26,7 @@ let myObj= {                              //objects
     age : 22,
 }
 
-const myFunction = function(){
+const myFunction = function(){ 
     console.log("Hello World");
 }
 
@@ -54,5 +54,31 @@ Object = object
 
 JS is dynamically type language.Beacuse, data type will automatically assisgned at time of compilation or code execution.
 */
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// *** 1.Stack (Primitive) 2.passed or assigned by value(call by value) 3.Changes to copies dont effect the original, *** 1.Heap (Non-Primitive) 2. accessed via references(stored in stack) 3.change value through another references affects original.
+
+let myYoutubename = "richachaudhary.com"
+
+let anothername = myYoutubename
+anothername = "development"
+
+// console.log(anothername);
+// console.log(myYoutubename);
+
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "richa@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
 
 
