@@ -7,6 +7,7 @@
 
 ((name) => {
     // unnamed IIFe
+
     console.log(`DB CONNECTED ${name}`);
     
 } ) ('richa')
